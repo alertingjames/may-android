@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout android:layout_weight="1" android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+            <bookclub.technion.maymsgphoto.widgets.PictureView
+                android:id="@+id/gridImageView1"
+                android:scaleType="centerInside"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom|center">
+
+                <TextView android:id="@+id/gridDeleteButton1"
+                    android:padding="10dp"
+                    android:background="@drawable/camera_select_frame"
+                    android:drawableLeft="@drawable/delete1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/gridViewButton1"
+                    android:padding="10dp"
+                    android:background="@drawable/camera_select_frame"
+                    android:drawableLeft="@drawable/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+            <bookclub.technion.maymsgphoto.widgets.PictureView
+                android:id="@+id/gridImageView2"
+                android:scaleType="centerInside"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom|center">
+
+                <TextView android:id="@+id/gridDeleteButton2"
+                    android:padding="10dp"
+                    android:background="@drawable/camera_select_frame"
+                    android:drawableLeft="@drawable/delete1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/gridViewButton2"
+                    android:padding="10dp"
+                    android:background="@drawable/camera_select_frame"
+                    android:drawableLeft="@drawable/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_weight="1" android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+            <bookclub.technion.maymsgphoto.widgets.PictureView
+                android:id="@+id/gridImageView3"
+                android:scaleType="centerInside"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom|center">
+
+                <TextView android:id="@+id/gridDeleteButton3"
+                    android:padding="10dp"
+                    android:background="@drawable/camera_select_frame"
+                    android:drawableLeft="@drawable/delete1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/gridViewButton3"
+                    android:padding="10dp"
+                    android:background="@drawable/camera_select_frame"
+                    android:drawableLeft="@drawable/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+            <bookclub.technion.maymsgphoto.widgets.PictureView
+                android:id="@+id/gridImageView4"
+                android:scaleType="centerInside"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom|center">
+
+                <TextView android:id="@+id/gridDeleteButton4"
+                    android:padding="10dp"
+                    android:background="@drawable/camera_select_frame"
+                    android:drawableLeft="@drawable/delete1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/gridViewButton4"
+                    android:padding="10dp"
+                    android:background="@drawable/camera_select_frame"
+                    android:drawableLeft="@drawable/edit"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

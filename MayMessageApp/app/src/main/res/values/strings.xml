@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">May</string>
+    <string name="facebook_app_id">1417070631673018</string>
+    <string name="fb_login_protocol_scheme">fb1417070631673018</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="welcome">Welcome! Please connect Facebook accounts for security standards.</string>
+    <string name="please_notice">The video selected is first copied to the Temp directory, then is compressed and moved to the Compressed Videos directory and finally the Temp directory is empty.</string>
+    <string name="carmode_description">Car Mode? Click on the car to turn it on. You can speak messages, hear responses &amp; send recorded messages.\n\n Say \"<b>NEW</b>\" to initiate a new message. Say \"<b>SEND</b>\" to send it.</string>
+
+    <string name="deleteImageButtonLabel">Delete Picture</string>
+    <string name="shareImageButtonLabel">Share Picture</string>
+    <string name="exitViewImageButtonLabel">Return</string>
+
+    <string name="gridDeleteButtonLabel">Delete</string>
+    <string name="gridViewButtonLabel">View</string>
+
+    <string name="helpButtonLabel">Help</string>
+    <string name="libraryButtonLabel">Library</string>
+    <string name="singleImageButtonLabel">1 Pic</string>
+    <string name="multiImageButtonLabel">4 Pics</string>
+    <string name="switchCameraButtonLabel">R/s</string>
+    <string name="cancelPictureButtonLabel">Cancel</string>
+
+    <string name="delayButtonLabelSecondsFormat">%d</string>
+    <string name="delayButtonLabelNone">0</string>
+    <string name="defaultDelayButtonLabel">5</string>
+
+    <string name="flashButtonDefaultLabel">Flash</string>
+    <string name="flashButtonOnLabel">On</string>
+    <string name="flashButtonOffLabel">Off</string>
+    <string name="flashButtonAutoLabel">Auto</string>
+
+    <string name="canceledPictureMessage">Canceled picture</string>
+    <string name="timerCountdownMessageFormat">Taking picture in %d seconds</string>
+    <string name="savedPictureMessage">Saved picture</string>
+
+    <string name="noImagesFound">You have not taken any pictures yet.</string>
+
+    <string name="about_text">CamTimer 1.2.3\n© 2011-2015 Brian Nenninger\nComments and bug reports: bnenning@gmail.com\n\nTouch the shutter button in the upper left to take a picture. If a delay is set, there will be a series of audible beeps starting 3 seconds before the picture is taken.\n\nThe buttons on the right allow you to control camera options as follows:\nDelay: Cycles between picture delays of 5, 15, and 30 seconds, and no delay.\n1 Pic/4 Pics: Toggle between taking a single picture, or four in succession.\nFlash: Cycle between automatic, on, and off flash settings. Available only on Android 2.1 or later.\nSwitch Camera: Switches between rear and front-facing cameras. Available only on devices with multiple cameras and Android 2.3 or later.\n\nAfter taking a picture, it will be shown with options to delete it, share it (via email/Facebook/Google+/etc), or return to the main screen. When taking 4 pictures, they will all be shown in a grid and you can view and delete individual pictures.\n\nThe Library button on the left shows a list of all pictures you have taken with CamTimer. Select one of the pictures to view it full screen, and delete or share it. The pictures are saved on your SD card in the CamTimer directory.</string>
+
+    <string name="Import">Import</string>
+    <string name="Delete_Images">Delete</string>
+    <string name="change_pwd">Change Pwd</string>
+    <string name="return_image">Return Image</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+
+    <string name="app_descrip">MediaCastle: An encrypted castle for your media</string>
+    <string name="set_password_text">Set Password</string>
+    <string name="done_deleting_text">Done</string>
+    <string name="enter_castle_text">Enter</string>
+    <string name="done_importing_text">Done</string>
+    <string name="done_returning_image_text">Done</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="instatag">InstaTag</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-8256229529844462/4908248434</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8256229529844462/6384981637</string>
+</resources>

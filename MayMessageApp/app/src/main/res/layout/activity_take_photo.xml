@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SurfaceView android:id="@+id/cameraView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="false"/>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top|center"
+                android:padding="10dp"
+                android:id="@+id/statusFrame"
+                android:visibility="gone">
+                <bookclub.technion.maymsgphoto.widgets.FontableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taking picture in"
+                    android:textSize="21sp"
+                    android:textColor="#e4012580"
+                    android:textStyle="bold"
+                    app:font="futura-md-bt-bold-58e2b41ab199c.ttf"
+                    android:id="@+id/text1"/>
+                <bookclub.technion.maymsgphoto.widgets.FontableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/statusText"
+                    android:textSize="21sp"
+                    android:textColor="#fbff029e"
+                    android:textStyle="bold"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:font="futura-md-bt-bold-58e2b41ab199c.ttf"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/light_blue_fill_round"/>
+                <bookclub.technion.maymsgphoto.widgets.FontableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="21sp"
+                    android:text="seconds"
+                    android:id="@+id/text2"
+                    app:font="futura-md-bt-bold-58e2b41ab199c.ttf"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#e4012580"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="top|left">
+
+                <bookclub.technion.maymsgphoto.utils.photoutils.ShutterButton
+                    android:id="@+id/shutterButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:clickable="true"
+                    android:src="@drawable/btn_camera_shutter_holo" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take Picture Here"
+                    android:textSize="11sp"
+                    android:padding="3dp"
+                    android:background="@drawable/camera_button_fill_round"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/zoomIn"
+            android:text="+"
+            android:background="@drawable/camera_select_frame"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:visibility="gone"
+            android:onClick="zoomIn"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button android:id="@+id/zoomOut"
+            android:text="-"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/camera_select_frame"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:visibility="gone"
+            android:onClick="zoomOut"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="bottom|center">
+
+            <LinearLayout
+                android:id="@+id/miscButtonBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp">
+                <Button android:id="@+id/helpButton"
+                    android:text="@string/helpButtonLabel"
+                    android:background="@drawable/select_round_rect"
+                    android:padding="10dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView android:id="@+id/libraryButton"
+                    android:background="@drawable/camera_select_frame"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#fff"
+                    android:drawableLeft="@drawable/gallery"
+                    android:text="Lab"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taken Pictures"
+                    android:textSize="11sp"
+                    android:padding="3dp"
+                    android:background="@drawable/camera_button_fill_round"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/optionsButtonBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="left|top"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/pictureDelayButton"
+                    android:text="@string/defaultDelayButtonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/camera_select_frame"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/timer"
+                    android:drawablePadding="8dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#fff"
+                    android:textSize="19sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timer Types"
+                    android:textSize="11sp"
+                    android:padding="3dp"
+                    android:background="@drawable/camera_button_fill_round"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/numberOfPicturesButton"
+                    android:text="@string/singleImageButtonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/camera_select_frame"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#fff"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/numbercaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take 1 Pic or 4"
+                    android:textSize="11sp"
+                    android:padding="3dp"
+                    android:background="@drawable/camera_button_fill_round"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/flashButton"
+                    android:text="Flash\n/No"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/camera_select_frame"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:drawableLeft="@drawable/ic_flash_on"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/flashcaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flash/No Flash"
+                    android:textSize="11sp"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:background="@drawable/camera_button_fill_round"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/switchCameraButton"
+                    android:text="Selfie\n/Front"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/camera_select_frame"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:drawableLeft="@drawable/ic_camera_rear"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/selfiecaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selfie/Front"
+                    android:textSize="11sp"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:background="@drawable/camera_button_fill_round"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cancelPictureButton"
+                android:text="@string/cancelPictureButtonLabel"
+                android:visibility="gone"
+                android:background="@drawable/select_media_item"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/cancel_icon"
+                android:drawablePadding="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rotateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/camera_select_frame"
+        android:drawableLeft="@drawable/rotateicon"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#fff"
+        android:text="Portrait/\nLandscape"
+        android:textSize="10sp"/>
+
+</FrameLayout>

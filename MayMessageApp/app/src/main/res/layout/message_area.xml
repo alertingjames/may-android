@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="bottom"
+    android:padding="3dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/attachmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/attachmentbutton"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColorHint="#CFD8DC"
+        android:textColor="#CFD8DC"
+        android:hint="Write a message..."
+        android:id="@+id/messageArea"
+        android:singleLine="true"
+        android:background="@null"
+        android:paddingLeft="15dp"
+        android:layout_gravity="center_vertical"
+        android:autoText="true"
+        android:inputType="textShortMessage|textCapSentences|textAutoCorrect"
+        android:maxHeight="80dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:background="#d4d4d4"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@android:drawable/ic_menu_send"
+        android:id="@+id/sendButton"/>
+</LinearLayout>

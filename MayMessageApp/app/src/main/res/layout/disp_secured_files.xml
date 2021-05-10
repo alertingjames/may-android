@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000"
+        android:orientation="horizontal">
+        <bookclub.technion.maymsgphoto.widgets.FontableTextView
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="My Secret Photo Album!"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:visibility="visible"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:padding="12dp"
+            app:font="ag-futura-58e274b5588ad.ttf"/>
+        <TextView
+            android:id="@+id/importMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Import"
+            android:textColor="#fff"
+            android:textSize="13sp"
+            android:gravity="bottom"
+            android:paddingBottom="7dp"/>
+        <ImageView
+            android:id="@+id/down"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:padding="5dp"
+            android:src="@drawable/thin_down"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/securemediadisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:columnWidth="72dp"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:numColumns="5"
+        android:stretchMode="spacingWidth"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="3dp"
+        android:focusable="true"
+        android:clickable="true">
+    </GridView>
+</LinearLayout>

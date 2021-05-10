@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/normal"
+        android:title="NORMAL"
+        android:icon="@drawable/normalmap"
+        android:showAsAction="always"
+        android:onClick="normal"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/satellite"
+        android:title="SATELLITE"
+        android:icon="@drawable/satellite"
+        android:showAsAction="always"
+        android:onClick="satellite"
+        />
+
+    <item
+        android:id="@+id/hybrid"
+        android:title="HYBRID"
+        android:icon="@drawable/hybridmap"
+        android:showAsAction="always"
+        android:onClick="hybrid"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/terrain"
+        android:title="TERRAIN"
+        android:icon="@drawable/terrainmap"
+        android:showAsAction="always"
+        android:onClick="terrain"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/none"
+        android:title="NONE"
+        android:showAsAction="always"
+        android:onClick="none"
+        app:showAsAction="always"
+        android:icon="@drawable/nonemap"/>
+
+    <item
+        android:id="@+id/myRequestLocation"
+        android:title="MYLOCATION"
+        android:showAsAction="always"
+        android:onClick="showInfo2"
+        app:showAsAction="always"
+        android:icon="@drawable/mylocation"/>
+
+</menu>

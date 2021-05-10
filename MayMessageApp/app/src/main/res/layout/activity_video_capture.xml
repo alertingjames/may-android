@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/googlesearch"
+    tools:context=".main.VideoCaptureActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#aa000000"/>
+        <ImageView
+            android:id="@+id/imv_back"
+            android:layout_width="30dp"
+            android:layout_height="42dp"
+            android:src="@drawable/back4"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/lytvideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:paddingTop="30dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="150dp"
+            android:orientation="vertical">
+
+            <VideoView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/videoView"
+                android:scrollbarThumbVertical="@anim/space"
+                android:layout_gravity="center" />
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0px"-->
+            <!--android:layout_weight="1"/>-->
+        </RelativeLayout>
+
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#808080"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#e8e8e8"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/txv_preview"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="PREVIEW"
+            android:textColor="#f77722"
+            android:textStyle="bold"
+            android:paddingLeft="25dp"
+            android:drawableLeft="@drawable/pre1"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#b7b7b7"
+            />
+        <TextView
+            android:id="@+id/txv_save"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/save1"
+            android:visibility="gone"
+            android:gravity="center"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#b7b7b7"
+            />
+        <TextView
+            android:id="@+id/txv_submit"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="TO UPLOAD"
+            android:textColor="#fa7822"
+            android:textStyle="bold"
+            android:paddingLeft="25dp"
+            android:drawableLeft="@drawable/submit1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
+

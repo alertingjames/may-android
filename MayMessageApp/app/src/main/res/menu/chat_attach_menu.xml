@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- PhotoEdit -->
+    <item
+        android:id="@+id/attach_photoedit"
+        android:title="Use Photo Editing"
+        android:icon="@drawable/edit_image"
+        android:showAsAction="always"
+        android:onClick="fromPhotoEdit"
+        />
+
+    <!-- Gallery -->
+    <item
+        android:id="@+id/attach_gallery"
+        android:title="Pick photo from Gallery"
+        android:icon="@drawable/galleryicon"
+        android:showAsAction="always"
+        android:onClick="fromGallery"
+        />
+
+    <!-- Photo -->
+    <item
+        android:id="@+id/attach_photo"
+        android:title="Take photo from Camera"
+        android:icon="@drawable/camera"
+        android:showAsAction="always"
+        android:onClick="takePhoto"
+        app:showAsAction="always" />
+
+    <!--video-->
+    <item
+        android:id="@+id/attach_video_gallery"
+        android:title="Pick video from Gallery"
+        android:icon="@drawable/videogalleryicon"
+        android:showAsAction="always"
+        android:onClick="pickVideo"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/attach_video"
+        android:title="Take video from Camera"
+        android:icon="@drawable/videorecordicon"
+        android:showAsAction="always"
+        android:onClick="takeVideo"
+        app:showAsAction="always" />
+
+    <!--audio-->
+    <item
+        android:id="@+id/attach_audio_storage"
+        android:title="Pick audio from Storage"
+        android:icon="@drawable/audiostorageicon"
+        android:showAsAction="always"
+        android:onClick="pickAudio"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/attach_audio"
+        android:title="Record audio"
+        android:icon="@drawable/audiorecord"
+        android:showAsAction="always"
+        android:onClick="recordAudio"
+        app:showAsAction="always" />
+
+    <!--document-->
+    <item
+        android:id="@+id/attach_file"
+        android:title="Pick other file from Storage"
+        android:icon="@drawable/filestorageicon"
+        android:showAsAction="always"
+        android:onClick="pickDocument"
+        app:showAsAction="always" />
+
+</menu>
